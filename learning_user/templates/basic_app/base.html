@@ -22,8 +22,8 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="{% url 'basic_app:reg' %}">Register</a></li>
-          <li><a href="{% url 'admin:index' %}">Admin</a></li>
+          <li style="color:#ff2c00"><a href="{% url 'basic_app:reg' %}">Register</a></li>
+          <li style="color:#ff2c00"><a href="{% url 'admin:index' %}">Admin</a></li>
           {% if user.is_authenticated %}
             <li><a class="navbar-link" href="{% url 'logout' %}">Logout</a></li>
           {% else %}
