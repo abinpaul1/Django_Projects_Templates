@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+{% load myextra %}
+  {% block body_block %}
+    <h1>Welcome to other</h1>
+    <h2>THIS IS INHERITANCE....BRO</h2>
+    <h3>{{ text|upper }}</h3>
+    <h4>{{ num|add_str:"bananas" }}</h4>
+  {% endblock %}
