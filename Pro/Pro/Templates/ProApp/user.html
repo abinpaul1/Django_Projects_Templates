@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "pro_style.css" %}"/>
+    <title>USER DETAILS</title>
+  </head>
+  <body>
+    <h1>HIGHLY CONFIDENTIAL USER DETAILS</h1>
+    <div class="data">
+      {% if user_data %}
+
+        <ol type="1">
+          {% for usr in user_data %}
+            <li>User Info
+              <ul>
+                <li>{{usr.first_name}}</li>
+                <li>{{usr.last_name}}</li>
+                <li>{{usr.email}}</li>
+              </ul>
+            </li>
+          {% endfor %}
+        </ol>
+
+      {% else %}
+        <p>No records found</p>
+
+      {% endif %}
+
+
+    </div>
+    {{haha}}
+  </body>
+</html>
